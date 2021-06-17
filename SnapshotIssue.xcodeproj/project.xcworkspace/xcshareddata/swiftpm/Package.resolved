@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ADAssertLayout",
+        "repositoryURL": "https://github.com/emanuelef/ADAssertLayout.git",
+        "state": {
+          "branch": null,
+          "revision": "b96448e9d8aa365baff5e20ef21b24eff49d21de",
+          "version": "1.0.3"
+        }
+      },
+      {
+        "package": "ADLayoutTest",
+        "repositoryURL": "https://github.com/emanuelef/ADLayoutTest.git",
+        "state": {
+          "branch": "develop",
+          "revision": "7d8b3b6fafe481ad2a4a40dd1209a40d89527718",
+          "version": null
+        }
+      },
+      {
+        "package": "ADUtils",
+        "repositoryURL": "https://github.com/faberNovel/ADUtils.git",
+        "state": {
+          "branch": null,
+          "revision": "b4e22024b226621ed8c4429eef73f490d41cc50f",
+          "version": "11.2.0"
+        }
+      },
+      {
+        "package": "Chalk",
+        "repositoryURL": "https://github.com/mxcl/Chalk.git",
+        "state": {
+          "branch": null,
+          "revision": "9aa9f348b86db3cf6702a3e43c081ecec80cf3c7",
+          "version": "0.4.0"
+        }
+      },
+      {
+        "package": "FileCheck",
+        "repositoryURL": "https://github.com/llvm-swift/FileCheck.git",
+        "state": {
+          "branch": null,
+          "revision": "0dc8a5bff1a7f01e1d7bcc20c79e2127b2ea3eeb",
+          "version": "0.2.5"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "986d191f94cec88f6350056da59c2e59e83d1229",
+          "version": "0.4.3"
+        }
+      },
+      {
+        "package": "SnapshotTesting",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
+        "state": {
+          "branch": null,
+          "revision": "f8a9c997c3c1dab4e216a8ec9014e23144cbab37",
+          "version": "1.9.0"
+        }
+      },
+      {
+        "package": "SwiftCheck",
+        "repositoryURL": "https://github.com/typelift/SwiftCheck.git",
+        "state": {
+          "branch": null,
+          "revision": "077c096c3ddfc38db223ac8e525ad16ffb987138",
+          "version": "0.12.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
