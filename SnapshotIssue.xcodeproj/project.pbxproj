@@ -13,7 +13,6 @@
 		88465FD4267B37AF00666CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88465FD3267B37AF00666CEA /* Assets.xcassets */; };
 		88465FD7267B37AF00666CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88465FD5267B37AF00666CEA /* LaunchScreen.storyboard */; };
 		88465FE2267B37AF00666CEA /* SnapshotIssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88465FE1267B37AF00666CEA /* SnapshotIssueTests.swift */; };
-		88465FED267B37AF00666CEA /* SnapshotIssueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88465FEC267B37AF00666CEA /* SnapshotIssueUITests.swift */; };
 		88466005267B540300666CEA /* ADLayoutTest in Frameworks */ = {isa = PBXBuildFile; productRef = 88466004267B540300666CEA /* ADLayoutTest */; };
 		88466008267B627E00666CEA /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 88466007267B627E00666CEA /* SnapshotTesting */; };
 		8846600A267B635600666CEA /* SomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88466009267B635600666CEA /* SomeView.xib */; };
@@ -51,8 +50,6 @@
 		88465FE1267B37AF00666CEA /* SnapshotIssueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotIssueTests.swift; sourceTree = "<group>"; };
 		88465FE3267B37AF00666CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88465FE8267B37AF00666CEA /* SnapshotIssueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotIssueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88465FEC267B37AF00666CEA /* SnapshotIssueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotIssueUITests.swift; sourceTree = "<group>"; };
-		88465FEE267B37AF00666CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88466009267B635600666CEA /* SomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeView.xib; sourceTree = "<group>"; };
 		8846600B267B63B500666CEA /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
 		88466010267B7F3B00666CEA /* SomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewModel.swift; sourceTree = "<group>"; };
@@ -91,7 +88,6 @@
 			children = (
 				88465FCB267B37AE00666CEA /* SnapshotIssue */,
 				88465FE0267B37AF00666CEA /* SnapshotIssueTests */,
-				88465FEB267B37AF00666CEA /* SnapshotIssueUITests */,
 				88465FCA267B37AE00666CEA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,15 +125,6 @@
 				88465FE3267B37AF00666CEA /* Info.plist */,
 			);
 			path = SnapshotIssueTests;
-			sourceTree = "<group>";
-		};
-		88465FEB267B37AF00666CEA /* SnapshotIssueUITests */ = {
-			isa = PBXGroup;
-			children = (
-				88465FEC267B37AF00666CEA /* SnapshotIssueUITests.swift */,
-				88465FEE267B37AF00666CEA /* Info.plist */,
-			);
-			path = SnapshotIssueUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88465FED267B37AF00666CEA /* SnapshotIssueUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
