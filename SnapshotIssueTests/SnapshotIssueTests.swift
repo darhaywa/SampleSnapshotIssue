@@ -6,28 +6,42 @@
 //
 
 import XCTest
+import ADLayoutTest
+import ADUtils
+import SnapshotTesting
+import SwiftCheck
 @testable import SnapshotIssue
 
 class SnapshotIssueTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
+    func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        runLayoutTests(
+            named: "Example",
+            randomStrategy: .consistent,
+            maxTestsCount: 5
+        ) { (viewModel: SomeViewModel) in
+            let view = SomeView.ad_fromNib()
+            view.overrideUserInterfaceStyle = .light
+            view.frame = CGRect(x: 0, y: 0, width: 1600, height: 1000)
+            view.configure(with: viewModel)
+            view.setNeedsLayout()
+            view.layoutIfNeeded()
+            assertSnapshot(
+                matching: view,
+                as: .image
+            )
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+            return .success
         }
     }
+}
 
+extension SomeViewModel: Arbitrary {
+    public static var arbitrary: Gen<SomeViewModel> {
+        return Gen<SomeViewModel>.compose { c in
+            return SomeViewModel(title: c.generate(using: .word))
+        }
+    }
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,12 @@
 		88465FD7267B37AF00666CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88465FD5267B37AF00666CEA /* LaunchScreen.storyboard */; };
 		88465FE2267B37AF00666CEA /* SnapshotIssueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88465FE1267B37AF00666CEA /* SnapshotIssueTests.swift */; };
 		88465FED267B37AF00666CEA /* SnapshotIssueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88465FEC267B37AF00666CEA /* SnapshotIssueUITests.swift */; };
+		88466005267B540300666CEA /* ADLayoutTest in Frameworks */ = {isa = PBXBuildFile; productRef = 88466004267B540300666CEA /* ADLayoutTest */; };
+		88466008267B627E00666CEA /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 88466007267B627E00666CEA /* SnapshotTesting */; };
+		8846600A267B635600666CEA /* SomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88466009267B635600666CEA /* SomeView.xib */; };
+		8846600C267B63B500666CEA /* SomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846600B267B63B500666CEA /* SomeView.swift */; };
+		8846600F267B64ED00666CEA /* ADUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 8846600E267B64ED00666CEA /* ADUtils */; };
+		88466011267B7F3B00666CEA /* SomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88466010267B7F3B00666CEA /* SomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,9 @@
 		88465FE8267B37AF00666CEA /* SnapshotIssueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapshotIssueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88465FEC267B37AF00666CEA /* SnapshotIssueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotIssueUITests.swift; sourceTree = "<group>"; };
 		88465FEE267B37AF00666CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88466009267B635600666CEA /* SomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SomeView.xib; sourceTree = "<group>"; };
+		8846600B267B63B500666CEA /* SomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeView.swift; sourceTree = "<group>"; };
+		88466010267B7F3B00666CEA /* SomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8846600F267B64ED00666CEA /* ADUtils in Frameworks */,
+				88466005267B540300666CEA /* ADLayoutTest in Frameworks */,
+				88466008267B627E00666CEA /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +115,9 @@
 				88465FD3267B37AF00666CEA /* Assets.xcassets */,
 				88465FD5267B37AF00666CEA /* LaunchScreen.storyboard */,
 				88465FD8267B37AF00666CEA /* Info.plist */,
+				88466009267B635600666CEA /* SomeView.xib */,
+				8846600B267B63B500666CEA /* SomeView.swift */,
+				88466010267B7F3B00666CEA /* SomeViewModel.swift */,
 			);
 			path = SnapshotIssue;
 			sourceTree = "<group>";
@@ -141,6 +156,11 @@
 			dependencies = (
 			);
 			name = SnapshotIssue;
+			packageProductDependencies = (
+				88466004267B540300666CEA /* ADLayoutTest */,
+				88466007267B627E00666CEA /* SnapshotTesting */,
+				8846600E267B64ED00666CEA /* ADUtils */,
+			);
 			productName = SnapshotIssue;
 			productReference = 88465FC9267B37AE00666CEA /* SnapshotIssue.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +232,11 @@
 				Base,
 			);
 			mainGroup = 88465FC0267B37AE00666CEA;
+			packageReferences = (
+				88466003267B540300666CEA /* XCRemoteSwiftPackageReference "ADLayoutTest" */,
+				88466006267B627E00666CEA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				8846600D267B64ED00666CEA /* XCRemoteSwiftPackageReference "ADUtils" */,
+			);
 			productRefGroup = 88465FCA267B37AE00666CEA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -228,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8846600A267B635600666CEA /* SomeView.xib in Resources */,
 				88465FD7267B37AF00666CEA /* LaunchScreen.storyboard in Resources */,
 				88465FD4267B37AF00666CEA /* Assets.xcassets in Resources */,
 				88465FD2267B37AE00666CEA /* Main.storyboard in Resources */,
@@ -257,6 +283,8 @@
 			files = (
 				88465FCF267B37AE00666CEA /* ViewController.swift in Sources */,
 				88465FCD267B37AE00666CEA /* AppDelegate.swift in Sources */,
+				88466011267B7F3B00666CEA /* SomeViewModel.swift in Sources */,
+				8846600C267B63B500666CEA /* SomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +376,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -409,6 +438,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -589,6 +619,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88466003267B540300666CEA /* XCRemoteSwiftPackageReference "ADLayoutTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emanuelef/ADLayoutTest.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		88466006267B627E00666CEA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.1;
+			};
+		};
+		8846600D267B64ED00666CEA /* XCRemoteSwiftPackageReference "ADUtils" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/faberNovel/ADUtils.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88466004267B540300666CEA /* ADLayoutTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88466003267B540300666CEA /* XCRemoteSwiftPackageReference "ADLayoutTest" */;
+			productName = ADLayoutTest;
+		};
+		88466007267B627E00666CEA /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88466006267B627E00666CEA /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		8846600E267B64ED00666CEA /* ADUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8846600D267B64ED00666CEA /* XCRemoteSwiftPackageReference "ADUtils" */;
+			productName = ADUtils;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88465FC1267B37AE00666CEA /* Project object */;
 }
